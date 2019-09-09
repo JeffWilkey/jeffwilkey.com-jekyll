@@ -9,6 +9,9 @@ featured_image: "/uploads/FireShot%20Capture%20013%20-%20Pokedex%20-%20serene-ha
 ---
 
 ![Pokedex Screenshot](/uploads/FireShot%20Capture%20013%20-%20Pokedex%20-%20serene-harbor-16803.herokuapp.com.png)
+
+## About
+
 A web application built on React utilizing the [PokemonTCG API](https://pokemontcg.io) as a backend the [Pokemon NPM package](https://www.npmjs.com/package/pokemon) to fetch Pokemon names since the TCG API makes that task a bit more difficult than it needs to be. For the MVP ([which I wrote an article about here](https://dev.to/jeffwilkey/creating-a-simple-pokemon-card-displayer-in-react-3l78)) you could only search the 150 original Pokemon and **1** associated card from the base series. Now, through a few iterations, I added the ability to search any Pokemon and flip through every single related card that's available from the Pokemon TCG API.
 
 The app utilizes [React-Select](https://react-select.com) for a dynamic search field which updates results returned from the Pokemon API as the value of the input field is changed. (*Shown in the figure below*).
