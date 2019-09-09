@@ -1,0 +1,149 @@
+#navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  .navbar-brand {
+    display: flex;
+    transition: .2s;
+    align-items: center;
+    padding: 1rem;
+    margin: 0 auto;
+    cursor: pointer;
+    a {
+      font-family: $primary-font;
+      font-weight: $font-bold;
+      font-size: 1.75rem;
+      text-decoration: none;
+      color: #333;
+      transition: .2s;
+    }
+    .logo {
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 70px;
+      height: 70px;
+      margin-right: 1rem;
+      border: solid 8px #333;
+      transition: .2s;
+      p {
+        font-family: $secondary-font;
+        letter-spacing: -0.05rem;
+        color: $accent;
+      }
+    }
+
+    &:hover {
+      a {
+        color: #000;
+      }
+      .logo {
+        border: solid 8px $accent;
+        p {
+          color: #333;
+        }
+      }
+    }
+  }
+
+  .navbar-links {
+    display: none;
+    position: relative;
+    list-style: none;
+    font-family: $primary-font;
+    font-size: 1.35rem;
+    li {
+      margin: 0.3rem 0;
+      a {
+        color: #333;
+        text-decoration: none;
+        &:hover {
+          border-bottom: 3px solid $accent;
+        }
+      }
+    }
+    
+  }
+
+  .facts {
+    font-family: $secondary-font;
+    text-align: center;
+    margin-top: 0;
+    span {
+      color: $accent;
+    }
+  }
+
+  .hamburger-menu {
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+    cursor: pointer;
+    .bar1, .bar2, .bar3 {
+      width: 35px;
+      height: 4px;
+      background-color: #333;
+      margin: 0.6rem;
+      transition: 0.3s;
+    }
+
+    /* Rotate first bar */
+    &.change .bar1 {
+      -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+      transform: rotate(-45deg) translate(-9px, 6px);
+    }
+
+    /* Fade out the second bar */
+    &.change .bar2 {
+      opacity: 0;
+    }
+
+    /* Rotate last bar */
+    &.change .bar3 {
+      -webkit-transform: rotate(45deg) translate(-12px, -10px);
+      transform: rotate(45deg) translate(-12px, -10px);
+    }
+  }
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  #navbar {
+    flex-direction: column;
+    padding-top: 5rem;
+    .navbar-brand {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0;
+      margin: 0 auto 1rem 0;
+      a {
+        font-size: 2rem;
+      }
+      .logo {
+        width: 75px;
+        height: 75px;
+        margin-bottom: 0.5rem;
+      }
+    }
+    .facts {
+      text-align: left;
+    }
+
+    .navbar-links {
+      display: inline;
+      top: 0;
+      padding: 0;
+    }
+
+    .hamburger-menu {
+      display: none;
+    }
+  }
+}

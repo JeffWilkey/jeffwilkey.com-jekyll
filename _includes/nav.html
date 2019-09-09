@@ -1,0 +1,25 @@
+<nav id="navbar">
+  <div class="navbar-brand">
+    <div class="logo">
+      <p>
+        {{"</" | escape }}{{site.initials}}{{ ">" | escape }}
+      </p>
+    </div>
+    <a href="/">{{ site.title }}</a>
+  </div>
+  <p class="facts">
+    <span>|</span>{% for fact in site.you_list %}
+      {{ fact }} <span>|</span>
+    {% endfor %}
+  </p>
+  <ul class="navbar-links">
+    <li><a href="/">Home</a></li>
+    <li><a href="/projects">Projects</a></li>
+    <li><a href="/blog">Blog</a></li>
+  </ul>
+  <div class="hamburger-menu" onclick="toggleBurger(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+</nav>
