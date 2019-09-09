@@ -1,0 +1,16 @@
+#project {
+  width: 100%;
+  padding-bottom: 5rem;
+  .project-title-container {
+    text-align: center;
+    .project-title {
+      display: inline-block;
+      font-weight: $font-bold;
+      font-size: 2rem;
+      border-bottom: solid 5px $accent2;
+    }
+  }
+  img {
+    width: 100%;
+  }
+}
