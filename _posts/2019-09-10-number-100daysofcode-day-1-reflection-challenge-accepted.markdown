@@ -8,7 +8,7 @@ tags:
 - 100DaysOfCode
 - React
 - Codepen
-featured_image: /uploads/100daysofcode.png
+featured_image: "/uploads/100daysofcode.png"
 hero: Read about starting the 100DaysOfCode Challenge as well as completing the Codepen
   "Think Small" challenge for the first week of September. Also my adventures in building
   a Pokemon Trading Card App on React.

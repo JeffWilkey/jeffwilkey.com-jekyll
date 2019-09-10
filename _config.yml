@@ -39,10 +39,10 @@ description: Write an awesome description for your new site here. You can edit t
   results) and in your feed.xml site description.
 pagination:
   enabled: true
-  collection: 'posts'
+  collection: posts
   per_page: 7
-  permalink: '/blog/:num/'
-  sort_field: 'date'
+  permalink: "/blog/:num/"
+  sort_field: date
   sort_reverse: true
 baseurl: 
 url: 
@@ -51,5 +51,3 @@ github_username: jeffwilkey
 plugins:
 - jekyll-feed
 - jekyll-paginate-v2
-
-
