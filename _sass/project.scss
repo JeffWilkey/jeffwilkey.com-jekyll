@@ -14,3 +14,38 @@
     width: 100%;
   }
 }
+
+.project-button {
+  font-family: $primary-font;
+  font-weight: 400;
+  position: absolute;
+  text-decoration: none;
+  padding: 0.5rem;
+  
+  &:hover {
+    font-size: 1rem;
+    text-decoration: none;
+  }
+
+  &.live {
+    border: solid 4px $accent;
+    color: #333;
+    top: 1rem;
+    right: 1rem;
+    &:hover {
+      color: #fff;
+      background-color: $accent;
+    }
+  }
+
+  &.repo {
+    color: #333;
+    border: solid 4px #333;
+    top: 1rem;
+    right: 8.5rem;
+    &:hover {
+      color: #fff;
+      background-color: #333;
+    }
+  }
+}

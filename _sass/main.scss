@@ -1,8 +1,23 @@
 /* General */
+html {
+  font-size: 18px;
+}
 body {
   margin: 0;
   padding: 0;
-  background-color: #fafafa;
+  background-color: #fefefe;
+}
+
+a {
+  font-weight: $font-bold;
+  color: $links;
+  text-decoration: none;
+  transition: .2s;
+  &:hover {
+    font-size: 1.1rem;
+    text-decoration: underline;
+    color: darken($links, 10%);
+  }
 }
 
 /* Font Defaults */
@@ -11,23 +26,21 @@ h1, h2, h3, h4, h5, h6 {
   color: #333;
 }
 
-p, ul, blockquote {
+p, ul {
+  margin-bottom: 0.9rem;
   font-family: $primary-font;
   color: #333;
-}
-
-p {
+  line-height: 1.8rem;
   code {
-    color: #fafafa;
-    background-color: #333;
+    color: #fff;
+    background-color: $accent;
     border-radius: 2px;
-    padding: 0.1rem 0.3rem;
+    padding: 0 0.3rem 0.1rem 0.3rem;
+    font-family: $secondary-font;
   }
-  
-}
-
-.highlighter-rouge {
-  overflow-x: scroll;
+  img {
+    margin-bottom: 1rem;
+  }
 }
 
 .view {
@@ -36,13 +49,13 @@ p {
    aside {
      box-sizing: border-box;
      background-color: #fff;
-     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
      min-width: 300px;
    }
 
    main {
      padding: 3rem;
-     background-color: #fafafa;
+     background-color: #fefefe;
      width: 100%;
      box-sizing: border-box;
    }

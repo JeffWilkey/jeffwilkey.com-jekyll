@@ -1,5 +1,5 @@
 <nav id="navbar">
-  <div class="navbar-brand">
+  <div class="navbar-brand" onclick="clickHome()">
     <div class="logo">
       <p>
         {{"</" | escape }}{{site.initials}}{{ ">" | escape }}
@@ -16,6 +16,7 @@
     <li><a href="/">Home</a></li>
     <li><a href="/projects">Projects</a></li>
     <li><a href="/blog">Blog</a></li>
+    <li><a href="/about">About</a></li>
   </ul>
   <div class="hamburger-menu" onclick="toggleBurger(this)">
     <div class="bar1"></div>

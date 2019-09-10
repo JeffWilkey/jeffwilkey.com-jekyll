@@ -4,3 +4,7 @@ function toggleBurger(x) {
   x.classList.toggle("change");
   navLinks.classList.toggle("visible");
 }
+
+function clickHome() {
+  window.location = "/"
+}
