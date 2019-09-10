@@ -34,12 +34,12 @@ Overall there are 4 separate React components at work.
 `Pokedex.js` manages most of the application's state:
 
 ``` javascript
-    this.state = {
-      selected: null,
-      cards: [],
-      startIndex: Math.floor(Math.random() * Math.floor(options.length)),
-      selectedCardIndex: 0
-    };
+this.state = {
+  selected: null,
+  cards: [],
+  startIndex: Math.floor(Math.random() * Math.floor(options.length)),
+  selectedCardIndex: 0
+};
 ```
 
 `selected` stores the `name` value of the currently selected Pokemon and makes sure that an unnecessary API call isn't made if the Pokemon is re-selected.

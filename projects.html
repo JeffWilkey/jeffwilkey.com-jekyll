@@ -1,7 +1,9 @@
 ---
 title: Projects
 ---
-
 <div>
   <h1>{{ page.title }}</h1>
+  {% for project in site.projects %}
+    <a href="{{project.url}}">{{project.title}}</a>
+  {% endfor %}
 </div>
