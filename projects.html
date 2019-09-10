@@ -2,8 +2,11 @@
 title: Projects
 ---
 
-<div>
-  <h1>{{ page.title }}</h1>
+<div class="page">
+  <div class="page-header">
+    <h1 class="page-title">{{ page.title }}</h1>
+  </div>
+  
   {% for project in site.projects %}
     <a href="{{project.url}}">{{project.title}}</a>
   {% endfor %}

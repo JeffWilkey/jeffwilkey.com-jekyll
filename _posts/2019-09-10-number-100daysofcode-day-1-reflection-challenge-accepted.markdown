@@ -1,6 +1,8 @@
 ---
 title: "#100DaysOfCode Day 1 Reflection: Challenge Accepted"
 date: 2019-09-10 04:54:00 Z
+featured_image: 100daysofcode.png
+hero: Read about starting the 100DaysOfCode Challenge as well as completing the Codepen "Think Small" challenge for the first week of September. Also my adventures in building a Pokemon Trading Card App on React.
 categories:
 - frontend
 - education
@@ -22,10 +24,12 @@ This month's Codepen Challenge theme is [Limitations](codepen.io/challenges/2019
 
 I had trouble coming up with an idea at first, I started out making some little mountains and a night sky with CSS and was going to put together a little outdoor scene. But alas, I wasn't having any fun with it which meant it was time to scrap that idea and move on. I'd been on kind of a space kick and had built a little interactive Solar System with HTML, CSS and jQuery earlier in the week and decided to continue in that vein with a tour of the solar system animation. I managed to figure out that I had as much canvas as I wanted on the left or right of the 100x50 pixel space. I'd just have to animate the canvas to slide across the display area so that's what I did using the animation keyframes below.
 
+```css
     @keyframes slide {
       0% { transform: translate(0, 0); }
       100% { transform: translate(-615px, 0); }
     }
+```
 
 Basically I had a 650px wide canvas with a height that matched the display area and then used the slide animation to display the each planet of the solar system. Then finally when I had all of the planets in place(except Pluto) something still felt missing. So after toying around with some different little ideas I decided to add the last "Pluto was here" bit and that completed the challenge for me. Check it out below.
 
@@ -37,20 +41,24 @@ Basically I had a 650px wide canvas with a height that matched the display area 
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 ### Skills Practiced:
+
 - Creativity and having fun
 - CSS Animation, Shapes & Art Creation
 - Fun with HTML and `position: absolute;`
 
 ## Pokemon React App
+
 ![FireShot Capture 013 - Pokedex - serene-harbor-16803.herokuapp.com.png](/uploads/FireShot%20Capture%20013%20-%20Pokedex%20-%20serene-harbor-16803.herokuapp.com.png)
 
 I originally started the Pokemon app with a hunger for nostalgia and the intention of writing an article about it on [dev.to](https://dev.to) which you can [read here](https://dev.to/jeffwilkey/creating-a-simple-pokemon-card-displayer-in-react-3l78). Basically the article covers building a very sketchy MVP, with only 150 Searchable Pokemon that are all hard-coded and also only displays a single card from the Pokemon base series. So after the end of that article is kind of where this one begins.
 
 ### Goals
+
 - Make all Pokemon searchable by utilizing either the [PokemonTCG API](https://pokemontcg.io) or another similar package and funneling the results into my React-Select component (ended up going with the [Pokemon NPM Package](https://www.npmjs.com/package/pokemon)).
 - Allow user to flip through multiple versions of cards which are already being pulled from the PokemonTCG API SDK.
 
 Achieving goal 1 was simple. After installing the Pokemon NPM package the code where the list of Pokemon is pulled went from this:
+
 ```javascript
 const Pokemon = ["Bulbasaur","Ivysaur","Venusaur","Charmander","Charmeleon","Charizard","Squirtle","Wartortle","Blastoise","Caterpie","Metapod","Butterfree","Weedle","Kakuna","Beedrill","Pidgey","Pidgeotto","Pidgeot","Rattata","Raticate","Spearow","Fearow","Ekans","Arbok","Pikachu","Raichu","Sandshrew","Sandslash","Nidoran","Nidorina","Nidoqueen","Nidoran","Nidorino","Nidoking","Clefairy","Clefable","Vulpix","Ninetales","Jigglypuff","Wigglytuff","Zubat","Golbat","Oddish","Gloom","Vileplume","Paras","Parasect","Venonat","Venomoth","Diglett","Dugtrio","Meowth","Persian","Psyduck","Golduck","Mankey","Primeape","Growlithe","Arcanine","Poliwag","Poliwhirl","Poliwrath","Abra","Kadabra","Alakazam","Machop","Machoke","Machamp","Bellsprout","Weepinbell","Victreebel","Tentacool","Tentacruel","Geodude","Graveler","Golem","Ponyta","Rapidash","Slowpoke","Slowbro","Magnemite","Magneton","Farfetch'd","Doduo","Dodrio","Seel","Dewgong","Grimer","Muk","Shellder","Cloyster","Gastly","Haunter","Gengar","Onix","Drowzee","Hypno","Krabby","Kingler","Voltorb","Electrode","Exeggcute","Exeggutor","Cubone","Marowak","Hitmonlee","Hitmonchan","Lickitung","Koffing","Weezing","Rhyhorn","Rhydon","Chansey","Tangela","Kangaskhan","Horsea","Seadra","Goldeen","Seaking","Staryu","Starmie","Mr. Mime","Scyther","Jynx","Electabuzz","Magmar","Pinsir","Tauros","Magikarp","Gyarados","Lapras","Ditto","Eevee","Vaporeon","Jolteon","Flareon","Porygon","Omanyte","Omastar","Kabuto","Kabutops","Aerodactyl","Snorlax","Articuno","Zapdos","Moltres","Dratini","Dragonair","Dragonite","Mewtwo","Mew"];
 export default Pokemon.map(p => ({
@@ -58,7 +66,9 @@ export default Pokemon.map(p => ({
   label: p
 }));
 ```
+
 to the much cleaner and more data-rich:
+
 ```javascript
 import pokemon from 'pokemon';
 

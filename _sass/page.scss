@@ -1,10 +1,57 @@
 .page {
-  .page-title {
-    font-size: 3.55rem;
-    margin-bottom: 0;
+  .page-header {
+    margin-bottom: 6.67rem;
+    .page-title {
+      font-size: 3.55rem;
+      margin-bottom: 0;
+      border-right: solid 4px $accent;
+    }
+    .page-tagline {
+      max-width: 556px;
+      font-size: 1.1rem;
+    }
   }
-  .page-tagline {
-    max-width: 556px;
-    font-size: 1.1rem;
+  
+
+  .page-hero {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+    .page-hero-image-container {
+      flex: 1;
+      .page-hero-image {
+        width: 100%;
+      }
+    }
+
+    .page-hero-article-excerpt {
+      flex: 1;
+      h2 {
+        a {
+          &:hover {
+            font-size: 1.6rem;
+          }
+        }
+      }
+    }
   }
+}
+
+@media (min-width: 992px) {
+  .page {
+    .page-hero {
+      flex-direction: row;
+      align-items: center;
+    }
+    .page-hero-image-container {
+      margin-right: 2rem;
+    }
+
+    .page-hero-article-excerpt {
+      h2 {
+        margin-top: 0;
+      }
+    }
+  }
+  
 }
