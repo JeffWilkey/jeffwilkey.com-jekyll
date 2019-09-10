@@ -1,8 +1,6 @@
 ---
 title: "#100DaysOfCode Day 1 Reflection: Challenge Accepted"
 date: 2019-09-10 04:54:00 Z
-featured_image: 100daysofcode.png
-hero: Read about starting the 100DaysOfCode Challenge as well as completing the Codepen "Think Small" challenge for the first week of September. Also my adventures in building a Pokemon Trading Card App on React.
 categories:
 - frontend
 - education
@@ -10,6 +8,10 @@ tags:
 - 100DaysOfCode
 - React
 - Codepen
+featured_image: 100daysofcode.png
+hero: Read about starting the 100DaysOfCode Challenge as well as completing the Codepen
+  "Think Small" challenge for the first week of September. Also my adventures in building
+  a Pokemon Trading Card App on React.
 ---
 
 ## Hitting the ground running
