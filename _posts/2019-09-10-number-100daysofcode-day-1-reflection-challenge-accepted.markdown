@@ -1,6 +1,13 @@
 ---
 title: "#100DaysOfCode Day 1 Reflection: Challenge Accepted"
 date: 2019-09-10 04:54:00 Z
+categories:
+- frontend
+- education
+tags:
+- 100DaysOfCode
+- React
+- Codepen
 ---
 
 ## Hitting the ground running
