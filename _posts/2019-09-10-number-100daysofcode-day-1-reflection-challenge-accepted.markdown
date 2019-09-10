@@ -80,7 +80,7 @@ export default pokemon.all().map(p => ({
 
 Then approaching goal 2 was also pretty simple with the code that was already in place. It was a simple as adding a selectedCardIndex field to the application's state as well as an increment function that handles incrementing the index. In the end, the changes in Pokedex.js file look like this:
 
-```javascript
+``` jsx
 import React, { Component } from 'react';
 import pokemon from 'pokemontcgsdk';
 import options from '../utils/pokemonOptions';
