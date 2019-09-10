@@ -1,14 +1,17 @@
 .page {
+  text-align: center;
   .page-header {
     margin-bottom: 6.67rem;
     .page-title {
       font-size: 3.55rem;
       margin-bottom: 0;
       border-right: solid 4px $accent;
+      text-align: left;
     }
     .page-tagline {
       max-width: 556px;
       font-size: 1.1rem;
+      text-align: left;
     }
   }
   
@@ -17,6 +20,7 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 4rem;
+    text-align: left;
     .page-hero-image-container {
       flex: 1;
       .page-hero-image {
@@ -35,6 +39,28 @@
       }
     }
   }
+
+  .page-post {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    .page-post-image {
+      width: 100%;
+    }
+    .page-post-title {
+      margin: 0 0 2.5rem 0;
+      a {
+        &:hover {
+          font-size: 1.2rem;
+        }
+      }
+    }
+    .page-post-date {
+      color: #333;
+      font-size: 0.75rem;
+      margin: 0;
+    }
+  }
 }
 
 @media (min-width: 992px) {
@@ -45,6 +71,9 @@
     }
     .page-hero-image-container {
       margin-right: 2rem;
+      .page-hero-image {
+        max-width: 555px;
+      }
     }
 
     .page-hero-article-excerpt {
@@ -52,6 +81,18 @@
         margin-top: 0;
       }
     }
+    .page-post {
+      display: inline-block;
+      width: calc(33% - 36px);
+      margin: 1rem;
+      text-align: left;
+      transition: .2s;
+      cursor: pointer;
+      &:hover {
+        transform: translate(0, -5px);
+      }
+    }
   }
+  
   
 }

@@ -69,6 +69,20 @@ p, ul {
   display: inline !important;
 }
 
+
+/* pagination controller */
+.paginator-controls {
+  list-style-type: none;
+  .paginator-control {
+    color: $accent;
+
+    &:hover {
+      color: darken($accent, 10%);
+    }
+  }
+}
+
+
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
   

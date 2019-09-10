@@ -1,10 +1,9 @@
-#project,
-#post {
+.article {
   width: 100%;
   padding-bottom: 5rem;
-  .project-title-container {
+  .article-title-container {
     text-align: center;
-    .project-title {
+    .article-title {
       display: inline-block;
       font-weight: $font-bold;
       font-size: 2rem;
@@ -16,7 +15,7 @@
   }
 }
 
-.project-button {
+.article-button {
   font-family: $primary-font;
   font-weight: 400;
   position: absolute;
