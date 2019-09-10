@@ -4,7 +4,8 @@ date: 2019-09-08 19:34:00 Z
 categories:
 - React App
 excerpt: A web application built on React utilizing the PokemonTCG API as a backend
-  the Pokemon NPM package to fetch Pokemon names
+  the Pokemon NPM package to fetch Pokemon names.
+hero: An awesome web application built on React utilizing the PokemonTCG API as a backend. Search a Pokemon and get check out every single related card and its stats.
 featured_image: "/uploads/FireShot%20Capture%20013%20-%20Pokedex%20-%20serene-harbor-16803.herokuapp.com.png"
 live_site_url: https://serene-harbor-16803.herokuapp.com
 github_repo_url: https://www.github.com/jeffwilkey/pokedex-react

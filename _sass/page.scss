@@ -2,16 +2,15 @@
   text-align: center;
   .page-header {
     margin-bottom: 6.67rem;
+    text-align: left;
     .page-title {
       font-size: 3.55rem;
       margin-bottom: 0;
       border-right: solid 4px $accent;
-      text-align: left;
     }
     .page-tagline {
       max-width: 556px;
       font-size: 1.1rem;
-      text-align: left;
     }
   }
   
@@ -31,11 +30,16 @@
     .page-hero-article-excerpt {
       flex: 1;
       h2 {
-        a {
+        & a {
+          margin-bottom: 1rem;
           &:hover {
             font-size: 1.6rem;
           }
         }
+      }
+
+      p {
+        margin-bottom: 1.5rem;
       }
     }
   }
@@ -47,19 +51,76 @@
     .page-post-image {
       width: 100%;
     }
-    .page-post-title {
-      margin: 0 0 2.5rem 0;
-      a {
-        &:hover {
-          font-size: 1.2rem;
+    .page-post-info-container {
+      display: flex;
+      justify-content: space-between;
+      .page-post-info {
+        flex: 1;
+        .page-post-title {
+          margin: 0 0 2.5rem 0;
+
+          a {
+            &:hover {
+              font-size: 1.2rem;
+            }
+          }
+        }
+
+        .page-post-date {
+          color: #333;
+          font-size: 0.75rem;
+          margin: 0;
         }
       }
+      
+      .project-icon-buttons {
+        .project-icon-button {
+          color: #333;
+
+          i {
+            margin: 0.5rem 0.2rem;
+          }
+        }
+      }
+      
     }
-    .page-post-date {
+  }
+
+  .project-button {
+    font-family: $primary-font;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    margin: 0 0.2rem;
+    &:hover {
+      font-size: 1rem;
+      text-decoration: none;
+    }
+
+    &.live {
+      border: solid 4px $accent;
       color: #333;
-      font-size: 0.75rem;
-      margin: 0;
+
+      &:hover {
+        color: #fff;
+        background-color: $accent;
+      }
     }
+
+    &.repo {
+      color: #333;
+      border: solid 4px #333;
+
+      &:hover {
+        color: #fff;
+        background-color: #333;
+      }
+    }
+  }
+
+  .fa-arrow-right {
+    margin-left: 0.5rem;
   }
 }
 

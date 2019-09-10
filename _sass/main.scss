@@ -63,6 +63,19 @@ p, ul {
    }
 }
 
+.danger,
+.success {
+  padding: 0.1rem 0.4rem 0.2rem 0.4rem;
+  background-color: #333;
+  border-radius: 0.2rem;
+}
+.success {
+  color: #50fa7b
+}
+.danger {
+  color: #ef5350;
+}
+
 /* visibility toggle */
 
 .visible {

@@ -1,0 +1,64 @@
+.contact-form {
+  text-align: left;
+  label {
+    color: #333;
+    font-family: $primary-font;
+    font-weight: $font-bold;
+  }
+  input,
+  textarea {
+    display: block;
+    width: 100%;
+    margin: 0.4rem 0 0.6rem 0;
+    border-radius: 0.5rem;
+    border: solid 3px #333;
+    height: 2rem;
+    font-family: $secondary-font;
+    font-size: 1.2rem;
+    transition: .2s;
+    padding-left: 1rem;
+    &:focus {
+      outline: none;
+      border: solid 4px $accent;
+    }
+    &::placeholder {
+      color: #ccc;
+    }
+  }
+  textarea {
+    min-height: 100px;
+  }
+
+  button {
+    box-sizing: border-box;
+    display: block;
+    font-family: $primary-font;
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 0.5rem;
+    background-color: none;
+    color: #333;
+    cursor: pointer;
+    border: solid 3px $accent;
+    transition: .2s;
+    width: 100px;
+    margin: 2rem auto;
+    &:hover {
+      background-color: $accent;
+      color: #fff;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .contact-form {
+    input,
+    textarea {
+      width: 50%;
+    }
+    button {
+      margin: 1.5rem 0 0 calc(50% - 80px);
+    }
+  }
+}

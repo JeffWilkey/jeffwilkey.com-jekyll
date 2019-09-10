@@ -1,0 +1,29 @@
+---
+title: Contact
+---
+<div class="page">
+  <div class="page-header">
+    <h1 class="page-title">Contact</h1>
+    <p class="page-tagline">
+      I'm currently
+      {% if site.work_availability == 'Available' %}
+        <span class="success">{{site.work_availability}}</span>
+        let's get in touch!
+      {% else %}
+        <span class="danger">{{site.work_availability}}</span>
+        but reach out anyway!
+      {% endif %}
+    </p>
+  </div>
+  <div>
+    <form class="contact-form" action="https://formspree.io/contact@jeffwilkey.com" method="POST">
+      <label>Name:</label>
+      <input type="text" name="name" placeholder="Your name">
+      <label>Email:</label>
+      <input type="email" name="_replyto" placeholder="Your email">
+      <label>Message:</label>
+      <textarea name="message" placeholder="Your message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</div>

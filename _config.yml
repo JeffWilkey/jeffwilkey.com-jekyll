@@ -39,10 +39,10 @@ description: Write an awesome description for your new site here. You can edit t
   results) and in your feed.xml site description.
 paginate: 7
 paginate_path: "/blog/:num/"
-baseurl: 
+baseurl:
 url: 
 twitter_username: jeffwilkey
 github_username: jeffwilkey
+work_availability: Available
 plugins:
 - jekyll-feed
-- jekyll-paginate
