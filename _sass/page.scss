@@ -13,6 +13,22 @@
       font-size: 1.1rem;
     }
   }
+
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    .about-img {
+      flex: 1;
+      img {
+        width: 100%;
+      }
+    }
+    .about-text {
+      flex: 1;
+      text-align: left;
+    }
+  }    
+  
   
 
   .page-hero {
@@ -153,6 +169,20 @@
         transform: translate(0, -5px);
       }
     }
+
+    .about-container {
+      flex-direction: row;
+      align-items: center;
+      .about-img {
+        img {
+          max-width: 325px;
+          width: 100%;
+        }
+      }
+      .about-text {
+        padding-right: 15%;
+      }
+    } 
   }
   
   

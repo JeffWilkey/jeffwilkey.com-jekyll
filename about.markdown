@@ -1,9 +1,0 @@
----
-title: About
-permalink: "/about/"
-layout: default
----
-
-# About
-
-Hi, I'm Jeff. I'm a web developer and am passionate about what I do. I love finding creative solutions to tough problems and really enjoy working with others. I first started programming in 2015, fell in love with the process and after 3 months at bootcamp, I started working right away. It's been a while since then and I've learned a ton working on web and mobile applications as a full-stack developer with different clients all around the U.S. Most recently I was contracted to be part of a small project at a company called Future Foundry and ended up working with their team for over a year on five different applications both web and mobile that all in production today. Now, I'm starting a new chapter of my career and looking for new opportunities to continue doing what I love!
