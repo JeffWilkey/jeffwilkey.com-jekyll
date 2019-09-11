@@ -1,6 +1,6 @@
 ---
 title: Gorman Group
-date: 2018-01-31 23:00:00 -08:00
+date: 2018-02-21 00:00:00 -08:00
 categories:
 - Web Applications
 - Full Stack
