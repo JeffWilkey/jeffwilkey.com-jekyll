@@ -1,6 +1,6 @@
 ---
 title: "#100DaysOfCode Day 1 Reflection: Challenge Accepted"
-date: 2019-09-10 04:54:00 Z
+date: 2019-09-04 21:54:00 -07:00
 categories:
 - blog
 tags:
