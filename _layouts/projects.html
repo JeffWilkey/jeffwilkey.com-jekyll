@@ -7,7 +7,7 @@ layout: default
     <h1 class="page-title">Projects</h1>
     <p class="page-tagline">Check out some case studies and demos of the things I've built or if you're in a hurry...
     </p><br>
-    <a class="project-button repo" href="{{site.projects.first.github_repo_url}}">View My GitHub <i
+    <a class="project-button repo" href="{{site.projects.first.github_repo_url}}">See My GitHub <i
         class="fab fa-github"></i></a>
   </div>
   {% for project in site.projects %}
@@ -21,10 +21,13 @@ layout: default
     <div class="page-hero-article-excerpt">
       <h2><a href="{{site.projects.first.url}}">{{ site.projects.first.title }}</a></h2>
       <p>{{ site.projects.first.hero }}</p>
-      <a class="project-button repo" href="{{site.projects.first.github_repo_url}}">GitHub Repo <i
-          class="fab fa-github"></i></a>
-      <a class="project-button live" href="{{site.projects.first.live_site_url}}">View Demo <i
-          class="fas fa-globe"></i></a>
+      <div class="project-buttons">
+        <a class="project-button repo" href="{{site.projects.first.github_repo_url}}">GitHub Repo <i
+            class="fab fa-github"></i></a>
+        <a class="project-button live" href="{{site.projects.first.live_site_url}}">View Demo <i
+            class="fas fa-globe"></i></a>
+      </div>
+      
       <br><br><br>
       <a href="{{site.projects.first.url}}">View Case Study <i class="fas fa-arrow-right"></i></a>
     </div>
