@@ -1,6 +1,6 @@
 ---
 title: Findaballer
-date: 2018-02-28 23:00:00 -08:00
+date: 2018-03-01 00:00:00 -08:00
 position: 1
 featured_image: "/uploads/findaballer.png"
 live_site_url: https://findaballer.com/#download
