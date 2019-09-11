@@ -3,6 +3,7 @@ title: Pokedex
 date: 2019-09-08 12:34:00 -07:00
 categories:
 - React App
+position: 0
 excerpt: A web application built on React utilizing the PokemonTCG API as a backend
   the Pokemon NPM package to fetch Pokemon names.
 hero: An awesome web application built on React utilizing the PokemonTCG API as a

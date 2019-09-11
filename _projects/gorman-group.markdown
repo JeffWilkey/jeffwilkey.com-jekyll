@@ -8,6 +8,7 @@ tags:
 - Rails
 - React
 - Docker
+position: 2
 featured_image: "/uploads/gormangroup.png"
 ---
 
