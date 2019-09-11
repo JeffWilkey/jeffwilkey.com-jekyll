@@ -43,10 +43,14 @@ layout: default
         </div>
         <div class="project-icon-buttons">
           <a class="project-icon-button" href="{{project.url}}"><i class="fas fa-pencil-ruler"></i></a>
-          <a class="project-icon-button" href="{{project.github_repo_url}}" target="_blank"><i
+          {% if project.github_repo_url %}
+            <a class="project-icon-button" href="{{project.github_repo_url}}" target="_blank"><i
               class="fab fa-github"></i></a>
-          <a class="project-icon-button" href="{{project.live_site_url}}" target="_blank"><i
+          {% end %}
+          {% if project.live_site_url %}
+            <a class="project-icon-button" href="{{project.live_site_url}}" target="_blank"><i
               class="fas fa-globe"></i></a>
+          {% end %}
         </div>
       </div>
 
