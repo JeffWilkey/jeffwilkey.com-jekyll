@@ -1,9 +1,12 @@
 ---
 title: Fulfyll
 date: 2019-09-11 11:27:00 -07:00
+featured_image: "/uploads/fulfyll.png"
 ---
 
-Our team at Future Foundry was brought on to implement the designs for the goal driving app, [Fulfyll](https://fulfyll.us/).
+![fulfyll-hires.png](/uploads/fulfyll-hires.png)
+
+Our team at Future Foundry was brought on to implement the designs for the goal driving app, Fulfyll.
 
 We built the app in React Native for iOS and the server using Rails. I was mainly responsible for the development of the API but contributed to the React Native side a fair amount.
 
