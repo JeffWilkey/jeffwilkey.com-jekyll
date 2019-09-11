@@ -3,6 +3,7 @@ title: Jekyll Portfolio
 date: 2019-09-11 13:18:00 -07:00
 featured_image: "/uploads/jekyll-portfolio.png"
 github_repo_url: https://github.com/JeffWilkey/jeffwilkey.com
+hero: A awesome portfolio template built on Jekyll while using Siteleaf as a CMS.
 ---
 
 ![Jekyll Portfolio](/uploads/jekyll-portfolio-hires.png)
