@@ -79,21 +79,21 @@
 
   .hamburger-menu {
     position: absolute;
-    top: 1.25rem;
-    right: 1.25rem;
+    top: 0.6rem;
+    right: 0.6rem;
     cursor: pointer;
     .bar1, .bar2, .bar3 {
-      width: 35px;
-      height: 4px;
+      width: 25px;
+      height: 2px;
       background-color: #333;
-      margin: 0.6rem;
+      margin: 0.4rem;
       transition: 0.3s;
     }
 
     /* Rotate first bar */
     &.change .bar1 {
-      -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-      transform: rotate(-45deg) translate(-9px, 6px);
+      -webkit-transform: rotate(-45deg) translate(0, 6px);
+      transform: rotate(-45deg) translate(0, 6px);
     }
 
     /* Fade out the second bar */
@@ -103,8 +103,8 @@
 
     /* Rotate last bar */
     &.change .bar3 {
-      -webkit-transform: rotate(45deg) translate(-14px, -13px);
-      transform: rotate(45deg) translate(-14px, -13px);
+      -webkit-transform: rotate(45deg) translate(-7px, -13px);
+      transform: rotate(45deg) translate(-7px, -13px);
     }
   }
 }
