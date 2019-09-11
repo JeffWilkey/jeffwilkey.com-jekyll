@@ -1,6 +1,6 @@
 ---
 title: Fulfyll
-date: 2019-09-11 11:27:00 -07:00
+date: 2018-02-12 11:27:00 -08:00
 featured_image: "/uploads/fulfyll.png"
 ---
 
