@@ -2,8 +2,12 @@
 layout: default
 ---
 
-<a class="article-button live" href="{{page.live_site_url}}" target="_blank">See Demo</a>
-<a class="article-button repo" href="{{page.github_repo_url}}" target="_blank">View GitHub Repo</a>
+{% if page.live_site_url %}
+  <a class="article-button live" href="{{page.live_site_url}}" target="_blank">See Demo</a>
+{% endif %}
+{% if page.github_repo_url %}
+  <a class="article-button repo" href="{{page.github_repo_url}}" target="_blank">View GitHub Repo</a>
+{% endif %}
 <article id="article">
   <div class="article-title-container">
     <h1 class="article-title">{{ page.title }}</h1>
