@@ -12,6 +12,8 @@ position: 2
 featured_image: "/uploads/gormangroup.png"
 ---
 
+![Gorman Group Screenshot](/uploads/gorman-group-hires.png)
+
 Our team at Future Foundry was brought on to create Gorman Group's internal website. Gorman Group is a recruiting firm which sources high-level executives from Brazil.
 
 We worked with a designer who was separately brought on, named [Alizah](https://alizah.com/). This site was built in React with a Ruby on Rails backend, using Docker for DevOps, Elastic Search for the search functionality.
