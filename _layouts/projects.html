@@ -10,7 +10,7 @@ layout: default
     <a class="project-button repo" href="{{site.projects.first.github_repo_url}}">See My GitHub <i
         class="fab fa-github"></i></a>
   </div>
-  {% assign projects = (site.projects | sort: 'date') | reverse %}
+  {% assign projects = site.projects | sort: 'date' | reverse %}
   {% for project in projects %}
     {% if project.url == projects.first.url %}
       <div class="page-hero">
