@@ -10,52 +10,53 @@ layout: default
     <a class="project-button repo" href="{{site.projects.first.github_repo_url}}">See My GitHub <i
         class="fab fa-github"></i></a>
   </div>
-  {% for project in site.projects %}
-  {% if project.url == site.projects.first.url %}
-  <div class="page-hero">
-    <div class="page-hero-image-container">
-      <a href="{{site.projects.first.url}}">
-        <img class="page-hero-image" src="{{site.projects.first.featured_image}}" alt="{{project.title}}" />
-      </a>
-    </div>
-    <div class="page-hero-article-excerpt">
-      <h2><a href="{{site.projects.first.url}}">{{ site.projects.first.title }}</a></h2>
-      <p>{{ site.projects.first.hero }}</p>
-      <div class="project-buttons">
-        <a class="project-button repo" href="{{site.projects.first.github_repo_url}}" target="_blank">GitHub Repo <i
-            class="fab fa-github"></i></a>
-        <a class="project-button live" href="{{site.projects.first.live_site_url}}" target="_blank">View Demo <i
-            class="fas fa-globe"></i></a>
-      </div>
-      
-      <br><br><br>
-      <a href="{{site.projects.first.url}}">View Case Study <i class="fas fa-arrow-right"></i></a>
-    </div>
-  </div>
-  {% else %}
-  <div class="page-post">
-    <a href="{{project.url}}">
-      <img class="page-post-image" src="{{project.featured_image}}" alt="{{project.title}}" />
-      <div class="page-post-info-container">
-        <div class="page-post-info">
-          <p class="page-post-date">{{ project.date | date: "%B %d, %Y" }}</p>
-          <h3 class="page-post-title"><a href="{{project.url}}">{{project.title}}</a></h3>
+  {% assign projects = (site.projects | sort: 'date') | reverse %}
+  {% for project in projects %}
+    {% if project.url == projects.first.url %}
+      <div class="page-hero">
+        <div class="page-hero-image-container">
+          <a href="{{projects.first.url}}">
+            <img class="page-hero-image" src="{{projects.first.featured_image}}" alt="{{project.title}}" />
+          </a>
         </div>
-        <div class="project-icon-buttons">
-          <a class="project-icon-button" href="{{project.url}}"><i class="fas fa-pencil-ruler"></i></a>
-          {% if project.github_repo_url %}
-            <a class="project-icon-button" href="{{project.github_repo_url}}" target="_blank"><i
-              class="fab fa-github"></i></a>
-          {% endif %}
-          {% if project.live_site_url %}
-            <a class="project-icon-button" href="{{project.live_site_url}}" target="_blank"><i
-              class="fas fa-globe"></i></a>
-          {% endif %}
+        <div class="page-hero-article-excerpt">
+          <h2><a href="{{projects.first.url}}">{{ projects.first.title }}</a></h2>
+          <p>{{ projects.first.hero }}</p>
+          <div class="project-buttons">
+            <a class="project-button repo" href="{{projects.first.github_repo_url}}" target="_blank">GitHub Repo <i
+                class="fab fa-github"></i></a>
+            <a class="project-button live" href="{{projects.first.live_site_url}}" target="_blank">View Demo <i
+                class="fas fa-globe"></i></a>
+          </div>
+          
+          <br><br><br>
+          <a href="{{projects.first.url}}">View Case Study <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
+      {% else %}
+      <div class="page-post">
+        <a href="{{project.url}}">
+          <img class="page-post-image" src="{{project.featured_image}}" alt="{{project.title}}" />
+          <div class="page-post-info-container">
+            <div class="page-post-info">
+              <p class="page-post-date">{{ project.date | date: "%B %d, %Y" }}</p>
+              <h3 class="page-post-title"><a href="{{project.url}}">{{project.title}}</a></h3>
+            </div>
+            <div class="project-icon-buttons">
+              <a class="project-icon-button" href="{{project.url}}"><i class="fas fa-pencil-ruler"></i></a>
+              {% if project.github_repo_url %}
+                <a class="project-icon-button" href="{{project.github_repo_url}}" target="_blank"><i
+                  class="fab fa-github"></i></a>
+              {% endif %}
+              {% if project.live_site_url %}
+                <a class="project-icon-button" href="{{project.live_site_url}}" target="_blank"><i
+                  class="fas fa-globe"></i></a>
+              {% endif %}
+            </div>
+          </div>
 
-    </a>
-  </div>
-  {% endif %}
+        </a>
+      </div>
+    {% endif %}
   {% endfor %}
 </div>
