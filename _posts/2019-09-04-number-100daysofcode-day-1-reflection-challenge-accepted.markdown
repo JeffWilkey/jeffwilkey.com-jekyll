@@ -23,7 +23,7 @@ This month's Codepen Challenge theme is [Limitations](codepen.io/challenges/2019
 
 > We begin this month of rather extreme design limitations by challenging you to design something very small. You only have 100x50 pixels to work with! Anything you design has to fit inside that rectangle (unless you'd prefer to interpret these 5,000 pixels some other way). What could this Lego brick-sized space contain? A button? A freaky design? An entire interactive world? -[codepen.io](http://codepen.io)
 
-I had trouble coming up with an idea at first, I started out making some little mountains and a night sky with CSS and was going to put together a little outdoor scene. But alas, I wasn't having any fun with it which meant it was time to scrap that idea and move on. I'd been on kind of a space kick and had built a little interactive Solar System with HTML, CSS and jQuery earlier in the week and decided to continue in that vein with a tour of the solar system animation. I managed to figure out that I had as much canvas as I wanted on the left or right of the 100x50 pixel space. I'd just have to animate the canvas to slide across the display area so that's what I did using the animation keyframes below.
+I had trouble coming up with an idea at first, I started out making some little mountains and a night sky with CSS and was going to put together a little outdoor scene. But alas, I wasn't having any fun with it which meant it was time to scrap that idea and move on. I'd been on kind of a space kick and had built a little interactive Solar System with HTML, CSS, and jQuery earlier in the week and decided to continue in that vein with a tour of the solar system animation. I managed to figure out that I had as much canvas as I wanted on the left or right of the 100x50 pixel space. I'd just have to animate the canvas to slide across the display area so that's what I did using the animation keyframes below.
 
 ```css
     @keyframes slide {
@@ -167,7 +167,7 @@ class Pokedex extends Component {
 export default Pokedex;
 ```
 
-All in all I was happy with what was accomplished on Day 1. My 100x50 Challenge Submission was later retweeted and added to Picked Pens by CodePen and the Pokemon app turned out really cool. I will be posting an end-to-end tutorial for building that same app in the future but for now you're welcome to look at the [GitHub repo](https://www.github.com/jeffwilkey/pokedex-react) here or [see it Live](https://serene-harbor-16803.herokuapp.com/).
+All in all, I was happy with what was accomplished on Day 1. My 100x50 Challenge Submission was later retweeted and added to Picked Pens by CodePen and the Pokemon app turned out really cool. I will be posting an end-to-end tutorial for building that same app in the future but for now, you're welcome to look at the [GitHub repo](https://www.github.com/jeffwilkey/pokedex-react) here or [see it Live](https://serene-harbor-16803.herokuapp.com/).
 
 
 
