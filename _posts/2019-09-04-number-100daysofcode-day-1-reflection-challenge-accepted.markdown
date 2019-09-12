@@ -15,7 +15,7 @@ hero: Read about starting the 100DaysOfCode Challenge as well as completing the 
 
 ## Hitting the ground running
 
-On day 1, I commited to the [#100DaysOfCode challenge](https://www.100daysofcode.com) publicly on Twitter and worked on both the [Think Small Codepen Challenge](codepen.io/challenges/2019/september/1) and the React app I've been playing with which utilizes the [PokemonTCG API](https://pokemontcg.io/). I'll be talking about my experience with all of this below as well as listing what I gained from the experience of working on them.
+On day 1, I commited to the [#100DaysOfCode challenge](https://www.100daysofcode.com) publicly on Twitter and worked on both the [Think Small Codepen Challenge](codepen.io/challenges/2019/september/1) and the React app I've been playing with which utilizes the [PokemonTCG API](https://pokemontcg.io/). I'll be talking about my experience with all of this below as well as listing what I gained from the experience of working on them. Also, I feel it's worth mentioning that while I'm an experienced developer who's been in the industry for a little while. I'm participating in the challenge to stay plugged in with the development and education community because I'm passionate about it and hoping to help others to grow where I can.
 
 ## The 100x50 Codepen Challenge
 
