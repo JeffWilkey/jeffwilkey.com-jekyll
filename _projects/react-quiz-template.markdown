@@ -14,6 +14,6 @@ The goal of this simple application was to allow creation of a custom quiz throu
 
 ## Features
 - Tracks number of correct and incorrect answers given by the user
-- Easily customizable interface through `config.json` file
-- Display pictures related to quiz question
-- A unique customizable quiz results page with a custom image
+- Easily customizable interface through the `config.json` file.
+- Display pictures related to the currently displayed quiz question.
+- A unique customizable quiz results page with a custom image.
