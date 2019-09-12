@@ -10,7 +10,7 @@ featured_image: "/uploads/quiz-app.png"
 ![quiz-app-hires.png](/uploads/quiz-app-hires.png)
 
 ## The Goal
-The goal of this simple application was to allow creation of a custom quiz through one JSON file which controls everything.
+The goal of this simple application was to allow the creation of a custom quiz through one JSON file which controls everything.
 
 ## Features
 - Tracks number of correct and incorrect answers given by the user
