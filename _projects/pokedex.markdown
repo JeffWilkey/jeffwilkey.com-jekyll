@@ -53,7 +53,7 @@ this.state = {
 
 `selectedCardIndex` is used to track the current position in the `cards` array. Incrementing or decrementing the value moves us to the next or previous card which will contain different art and attributes.
 
-### Little Things
+### Little Thing
 One last thing worth mentioning: I enjoy adding little quirks to sites & apps that I work on. I think little touches like the animation shown below help the site feel more alive and welcoming.
 
 <p class="codepen" data-height="400" data-theme-id="light" data-default-tab="css,result" data-user="jeffwilkey" data-slug-hash="qBWPjKm" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Bouncing Pokeball">
