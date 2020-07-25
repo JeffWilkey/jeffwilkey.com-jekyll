@@ -2,6 +2,9 @@
 title: Jeff Wilkey
 timezone: America/Los_Angeles
 collections:
+  legislations:
+    title: Legislations
+    output: true
   posts:
     title: Posts
     output: true
